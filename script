@@ -1,0 +1,25 @@
+import blenderCapCreator as bCC
+
+# Change these variables to make a cap.
+# Radius of the sphere the cap will be on.
+radius = 1
+
+# Angular size of the cap.
+angle = np.pi/10
+
+# Euler angles of the cap.
+euler = (0, 0, 0)
+
+# Location of the cap.
+location = (0, 0, 0)
+
+# Number of corners the cap will have on the xy plane.
+corners = 60
+
+# Number of layers being stacked in the z direction.
+layers = 100
+
+# Name the cap.
+name = "Cap"
+
+bCC.createCap(radius, angle, euler, location, corners, layers, name)
